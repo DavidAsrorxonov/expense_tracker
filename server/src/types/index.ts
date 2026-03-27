@@ -18,3 +18,14 @@ export enum ExpenseCategory {
   DEBT = "debt",
   OTHER = "other",
 }
+
+export interface Expense {
+  id: string;
+  userId: string;
+  amount: number;
+  category: ExpenseCategory;
+  description: string;
+  date: Date;
+  createdAt: Date;
+  updatedAt: Date;
+}
